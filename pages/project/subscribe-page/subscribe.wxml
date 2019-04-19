@@ -1,0 +1,27 @@
+<!--pages/project/subscribe-page/subscribe.wxml-->
+
+<import src="cell-template.wxml" />
+
+<view>
+  <!-- 顶部公司详情 -->
+  <view class='top-bgview-xss'>
+    <image class='logo-xss' mode='scaleToFill' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1555477124766&di=0de6c9c09dcc9669ae497a2c1aefa20a&imgtype=0&src=http%3A%2F%2Fsrc.onlinedown.net%2Fimages%2Fxcs%2F10%2F2017-08-08_598919fbc7be2.PNG'></image>
+
+    <view class='collection-xss'>
+      <text class='title-xss'>youmei皮肤管理中心</text>
+      <text catchtap="phoneTap" class='phone-xss'>电话: 0755-23611550 </text>
+      <text class='address-xss'>地址: 福田区泰然八路盛唐大厦西座2803(下沙地铁站C出口)</text>
+    </view>
+
+    <!-- 分割线 -->
+    <view class='line-xss'></view>
+  </view>
+
+  <!-- cellItem -->
+  <view class='cellBg-xss'>
+    <block wx:for="{{beauticianData}}"  wx:key="key" wx:for-item="item">
+      <template is="cellItem" data="{{...item}}"/>
+    </block>
+  </view>
+
+</view>

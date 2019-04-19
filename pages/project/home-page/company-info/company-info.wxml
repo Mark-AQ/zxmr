@@ -1,0 +1,48 @@
+<!--pages/project/home-page/company-info/company-info.wxml-->
+<view>
+  <!-- 轮播图 -->
+  <swiper class='swiper-xss' catchtap="onSwiperTap" vertical="{{false}}" indicator-dots="true" autoplay="true" indicator-active-color="#ec3333" interval="5000">
+    <view wx:for="{{companyInfo.imageUrls}}" wx:key="key" wx:for-item="imgItem">
+      <swiper-item>
+        <image class='swiper-xss' src="{{imgItem}}"></image>
+      </swiper-item>
+    </view>
+  </swiper>
+
+  <!-- 公司名字 -->
+  <view class='company-bgview-xss'>
+    <text class='titlename-xss'>{{companyInfo.name}}</text>
+    <image class='code-xss' src="/images/icon/2wm.png"></image>
+  </view>
+  <view class='lineview-sxx'></view>
+
+  <!-- 日期 -->
+  <view class='time-bgview-xss'>
+  <text class='hours-xss'>{{companyInfo.businessHours}}</text>
+  <image class="time-image-xss" src="/images/icon/time.png"></image>
+    
+  </view>
+  <view class='lineview-sxx'></view>
+
+  <!-- 位置 -->
+  <view class='wz-bgview-xss'>
+    <image class='wz-image-xss' src="/images/icon/wz.png"></image>
+    <text class='wz-address-xss'>{{companyInfo.address}}</text>
+    <!-- <image class='wz-phone-xss' src="/images/icon/phone.png"></image> -->
+  </view>
+  <view class='lineview-sxx'></view>
+
+  <!-- 简介 -->
+   
+  <view class='info-bgview-xss'>
+    <text class='companytitle-xss'>公司介绍:</text>
+    <text class='companyInfo-xss'>{{companyInfo.info}}</text>
+  </view>
+  <view class='lineview-sxx'></view> 
+
+  <!-- 电话 -->
+  <button class="phone-button" bindtap='phoneTap'>
+    <image class="phone-image" src="/images/icon/phone.png"></image>
+  </button> 
+
+</view>

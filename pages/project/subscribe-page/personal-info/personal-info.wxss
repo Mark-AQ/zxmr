@@ -1,0 +1,232 @@
+/* pages/project/subscribe-page/personal-info/personal-info.wxss */
+@import "/pages/project/home-page/recommend_item/recommend-item-template.wxss";
+@import "/pages/project/subscribe-page/personal-info/production-template.wxss";
+
+page {
+  width: 100%;
+  background-color: white;
+  height: 619rpx;
+}
+
+.topbg-xss {
+  width: 100%;
+  height: 300rpx;
+  background-color: white;
+  padding: 20rpx 0;
+}
+
+/* 二维码 */
+
+.right-image-xss {
+  position: absolute;
+  right: 22rpx;
+  top: 22rpx;
+  width: 63rpx;
+  height: 64rpx;
+}
+
+/* 头像 */
+
+.portrait-xss {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 100%;
+  display: block;
+  margin: 0 auto;
+  border: 5rpx solid white;
+  z-index: 9999;
+}
+
+.name-xss {
+  display: block;
+  text-align: center;
+  margin-top: 22rpx;
+  color: white;
+  z-index: 9999;
+}
+
+.bg-xss {
+  z-index: 999;
+  text-align: center;
+}
+
+.vipbg-xss {
+  z-index: 999;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+}
+
+.vip-image-xss {
+  width: 32rpx;
+  height: 32rpx;
+  position: absolute;
+  z-index: 999;
+  left: 0rpx;
+}
+
+.jobs-xss {
+  display: block;
+  text-align: center;
+  padding: 3rpx 15rpx;
+  color: #666;
+  font-size: 22rpx;
+  margin-left: 22rpx;
+  border-radius: 18rpx;
+  background-color: white;
+}
+
+.banner-xss {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: white;
+}
+
+.zuoping-xss {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.zuoping-image-xss {
+  width: 96rpx;
+  height: 96rpx;
+  margin-top: 22rpx;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.zuoping-text-xss {
+  font-size: 30rpx;
+  margin-top: 14rpx;
+  margin-bottom: 22rpx;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333;
+  font-size: 28rpx;
+}
+
+.yuyue-xss {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.yuyue-image-xss {
+  width: 96rpx;
+  height: 96rpx;
+  margin-top: 22rpx;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.yuyue-text-xss {
+  font-size: 30rpx;
+  margin-top: 14rpx;
+  margin-bottom: 22rpx;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333;
+  font-size: 28rpx;
+}
+
+.personalInfo-line-xss {
+  width: 100%;
+  height: 16rpx;
+  background-color: #f3f3f3;
+}
+
+.address-storenameBg-xss {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  /* background-color: rebeccapurple; */
+}
+
+.storenaem-xss {
+  margin: 22rpx 84rpx 22rpx 22rpx;
+  color: #000;
+  font-size: 24rpx;
+}
+
+.address-xss {
+  margin: 0 84rpx 22rpx 22rpx;
+  color: #666;
+  font-size: 24rpx;
+}
+
+.dial-phone-xss {
+  width: 52rpx;
+  height: 52rpx;
+  position: absolute;
+  left: 90%;
+  padding: 40rpx 0;
+}
+
+.line-xss {
+  margin: 0 22rpx 22rpx 22rpx;
+  background-color: #f3f3f3;
+  height: 2rpx;
+}
+
+.todayBg-xss {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.todayTag-xss {
+  margin: 0 84rpx 22rpx 22rpx;
+  color: #000;
+  font-size: 24rpx;
+}
+
+.productionTitle-xss {
+  width: 100%;
+  height: 86rpx;
+  color: #000;
+  font-size: 30rpx;
+  background-color: white;
+}
+
+.productionText-xss {
+  margin-left: 22rpx;
+  line-height: 86rpx;
+}
+
+.productionTitle-line-xss {
+  margin: 0 0 22rpx 0;
+  background-color: #f3f3f3;
+  height: 2rpx;
+}
+
+.productionItemList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /*  超出自动换行 */
+  margin-bottom: 100rpx;
+  background-color: white;
+}
+
+.subscribeButtonBg-css {
+  background-color: white;
+  width: 100%;
+  height: 106rpx;
+  position: fixed;
+  bottom: 0;
+}
+
+.subscribeButton {
+  background-color: rgb(18, 168, 123);
+  border-radius: 12rpx;
+  width: 92%;
+  height: 80rpx;
+  margin: 13rpx auto;
+  color: white;
+  font-size: 32rpx;
+}
+
+.subscribeButton:after{ border: none; }

@@ -1,0 +1,45 @@
+<!--pages/project/project-page/project.wxml-->
+
+<!-- 头部筛选菜单 -->
+<view class="sort-list">
+  <view class="sort" bindtap="changeBoxBtn" data-num="0"> 分类
+    <image class='downArrow' src="/images/icon/downArrow.png"></image>
+  </view>
+  <view class="sort" bindtap="changeBoxBtn" data-num="1"> 销量
+    <image class='downArrow' src="/images/icon/downArrow.png"></image>
+  </view>
+  <view class="sort" bindtap="changeBoxBtn" data-num="2"> 价格
+    <image class='downArrow' src="/images/icon/downArrow.png"></image>
+  </view>
+</view>
+
+<!-- 分类 {{item.productCategoryName}} -->
+<view bindtap='coverTap' class="cover {{statesIndex==1?'show-cover':''}}">
+  <scroll-view scroll-y='true' class="classify-sort-list {{statesIndex==1?'classify-act':''}}">
+    <view wx:for="{{classifyArrs}}" wx:key="key" class="classify-sortbg" data-index="{{item.productCategoryId}}">
+      <text class="classify-sort">{{item.productCategoryName}}</text>
+    </view>
+  </scroll-view>
+</view>
+
+
+<!-- 销量  --->
+<view bindtap='coverTap'  class="cover {{statesIndex==2?'show-cover':''}}">
+  <view class="classify-sort-list {{statesIndex==2?'classify-act':''}}">
+    <view wx:for="{{salesArrs}}" wx:key="key" class="classify-sortbg" data-index="{{item.indx}}">
+      <text class="classify-sort">{{item.text}}</text>
+    </view>
+  </view>
+</view>
+
+<!-- 销量  --->
+<view bindtap='coverTap'  class="cover {{statesIndex==3?'show-cover':''}}">
+  <view class="classify-sort-list {{statesIndex==3?'classify-act':''}}">
+    <view wx:for="{{salesArrs}}" wx:key="key" class="classify-sortbg" data-index="{{item.indx}}">
+      <text class="classify-sort">{{item.text}}</text>
+    </view>
+  </view>
+</view>
+
+
+<text class='text-xss'>翻身,借古讽今大使馆附近的水果减肥过段时间高房价的水果减肥告诉大家风格就是看到官方就告诉大家分公司接电话</text>

@@ -1,0 +1,7 @@
+<template name="recommendItemTemplate">
+  <view class='recommend-item'>
+    <image class='recommend-image' mode="aspectFill" src="{{imgSrc}}"></image>
+    <text class='recommend-title'>{{title}}</text>
+    <text class='recommend-price'>{{"¥" + price}}</text>
+  </view>
+</template>

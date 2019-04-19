@@ -1,0 +1,159 @@
+
+
+// 项目分类数据
+var loadData = [{
+  "productCategoryId": 1,
+  "productCategoryName": "面部",
+  "goodsKind": "S_CPZL_SP",
+  "goodsKindName": "商品",
+  "originalCategoryId": 5436840131866625
+}, {
+  "productCategoryId": 2,
+  "productCategoryName": "眼部",
+  "goodsKind": "S_CPZL_SP",
+  "goodsKindName": "商品",
+  "originalCategoryId": 5439727198056448
+}, {
+  "productCategoryId": 3,
+  "productCategoryName": "颈部",
+  "goodsKind": "S_CPZL_SP",
+  "goodsKindName": "商品",
+  "originalCategoryId": 5442507678820352
+}, {
+  "productCategoryId": 4,
+  "productCategoryName": "头部",
+  "goodsKind": "S_CPZL_SP",
+  "goodsKindName": "商品",
+  "originalCategoryId": 5442507995097088
+}, {
+  "productCategoryId": 5,
+  "productCategoryName": "艾灸",
+  "goodsKind": "S_CPZL_SP",
+  "goodsKindName": "商品",
+  "originalCategoryId": 5442508550219776
+}, {
+  "productCategoryId": 6,
+  "productCategoryName": "药浴",
+  "goodsKind": "S_CPZL_SP",
+  "goodsKindName": "商品",
+  "originalCategoryId": 5442509082306560
+}, {
+  "productCategoryId": 7,
+  "productCategoryName": "胸部",
+  "goodsKind": "S_CPZL_SP",
+  "goodsKindName": "商品",
+  "originalCategoryId": 5442509719808000
+}, {
+  "productCategoryId": 8,
+  "productCategoryName": "减肥",
+  "goodsKind": "S_CPZL_SP",
+  "goodsKindName": "商品",
+  "originalCategoryId": 5442510194550784
+}, {
+  "productCategoryId": 9,
+  "productCategoryName": "精油",
+  "goodsKind": "S_CPZL_SP",
+  "goodsKindName": "商品",
+  "originalCategoryId": 5442513833797632
+}, {
+  "productCategoryId": 10,
+  "productCategoryName": "仪器",
+  "goodsKind": "S_CPZL_SP",
+  "goodsKindName": "商品",
+  "originalCategoryId": 5442514585888768
+}, {
+  "productCategoryId": 11,
+  "productCategoryName": "沐浴露",
+  "goodsKind": "S_CPZL_SP",
+  "goodsKindName": "商品",
+  "originalCategoryId": 5442517872453632
+}, {
+  "productCategoryId": 12,
+  "productCategoryName": "身体",
+  "goodsKind": "S_CPZL_SP",
+  "goodsKindName": "商品",
+  "originalCategoryId": 5450703098619904
+}, {
+  "productCategoryId": 13,
+  "productCategoryName": "淋巴",
+  "goodsKind": "S_CPZL_SP",
+  "goodsKindName": "商品",
+  "originalCategoryId": 5451010563516416
+}, {
+  "productCategoryId": 14,
+  "productCategoryName": "润肤露",
+  "goodsKind": "S_CPZL_SP",
+  "goodsKindName": "商品",
+  "originalCategoryId": 5451117890545664
+}, {
+  "productCategoryId": 15,
+  "productCategoryName": "美容",
+  "goodsKind": "S_CPZL_FW",
+  "goodsKindName": "服务",
+  "originalCategoryId": 5436840131866624
+}, {
+  "productCategoryId": 16,
+  "productCategoryName": "美体",
+  "goodsKind": "S_CPZL_FW",
+  "goodsKindName": "服务",
+  "originalCategoryId": 5442519846922240
+}, {
+  "productCategoryId": 17,
+  "productCategoryName": "汗蒸",
+  "goodsKind": "S_CPZL_FW",
+  "goodsKindName": "服务",
+  "originalCategoryId": 5442520007878656
+}, {
+  "productCategoryId": 18,
+  "productCategoryName": "药浴",
+  "goodsKind": "S_CPZL_FW",
+  "goodsKindName": "服务",
+  "originalCategoryId": 5442520429864960
+}, {
+  "productCategoryId": 19,
+  "productCategoryName": "SPA",
+  "goodsKind": "S_CPZL_FW",
+  "goodsKindName": "服务",
+  "originalCategoryId": 5442520727431168
+}, {
+  "productCategoryId": 20,
+  "productCategoryName": "艾灸",
+  "goodsKind": "S_CPZL_FW",
+  "goodsKindName": "服务",
+  "originalCategoryId": 5442521336358912
+}, {
+  "productCategoryId": 21,
+  "productCategoryName": "减肥",
+  "goodsKind": "S_CPZL_FW",
+  "goodsKindName": "服务",
+  "originalCategoryId": 5442521692022784
+}, {
+  "productCategoryId": 22,
+  "productCategoryName": "体验卡",
+  "goodsKind": "S_CPZL_FW",
+  "goodsKindName": "服务",
+  "originalCategoryId": 5442522544973824
+}, {
+  "productCategoryId": 23,
+  "productCategoryName": "综合",
+  "goodsKind": "S_CPZL_FW",
+  "goodsKindName": "服务",
+  "originalCategoryId": 5455949644378112
+}, {
+  "productCategoryId": 24,
+  "productCategoryName": "胸部",
+  "goodsKind": "S_CPZL_FW",
+  "goodsKindName": "服务",
+  "originalCategoryId": 5456545084518400
+}, {
+  "productCategoryId": 25,
+  "productCategoryName": "健康",
+  "goodsKind": "S_CPZL_SP",
+  "goodsKindName": "商品",
+  "originalCategoryId": null
+}]
+
+
+module.exports = {
+  classifyData: loadData,
+}

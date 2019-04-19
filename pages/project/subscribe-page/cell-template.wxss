@@ -1,0 +1,53 @@
+page {
+  margin-top: 237rpx;
+}
+
+.bg-xss {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.icon-xss {
+  margin: 22rpx;
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 5px;
+}
+
+.localBg-xss {
+  display: flex;
+  flex-direction: column;
+  margin: 22rpx 0;
+}
+
+.name-xss {
+  color: #000;
+}
+
+.profess-xss {
+  margin-top: 15rpx;
+  font-size: 30rpx;
+  color: #666;
+}
+
+.works-xss {
+  margin-top: 22rpx;
+  color: #777;
+  font-size: 25rpx;
+}
+
+.subscribeIcon-xss {
+  width: 100rpx;
+  height: 100rpx;
+  position: absolute;
+  right: 30rpx;
+  margin-top: 36rpx;
+}
+
+
+.template-line-xss {
+  background-color: #f3f3f3;
+  height: 2rpx;
+  width: 100%;
+}

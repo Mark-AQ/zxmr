@@ -1,0 +1,20 @@
+<!--pages/project/home-page/recommend_tabel/recommend.wxml-->
+
+<import src="../recommend_item/recommend-item-template.wxml" />
+
+<template name="recommendLabelTemplate">
+  <view class='recommendLabel-container '>
+    <view class='recommendLabel-topview'>
+      <text class='topview-title'>{{title}}</text>
+      <view class='line-view'></view>
+    </view>
+
+    <!-- 一个美容Item -->
+    <view class='recommendItemList'>
+      <block wx:for="{{dataList}}" wx:key="key" wx:for-item="pItem">
+        <template is="recommendItemTemplate" data="{{...pItem}}" />
+      </block>
+    </view>
+  </view>
+
+</template>

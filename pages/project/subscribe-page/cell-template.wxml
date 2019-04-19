@@ -1,0 +1,12 @@
+<template name="cellItem">
+  <view class='bg-xss'   bindtap='cellItemTap'  data-pageId="{{pageId}}">
+    <image class='icon-xss' src='{{imageUrls}}'></image>
+    <view class='localBg-xss'>
+      <text class='name-xss'>{{name}}</text>
+      <text class='profess-xss'>{{jobs}}</text>
+      <text class='works-xss'>{{"作品:" + works}}  {{"预约:" + appointments}}</text>
+    </view>
+    <image  bindtap='subscribeTap' class='subscribeIcon-xss' src='/images/icon/yuyue.png'></image>
+  </view>
+ <view class='template-line-xss'></view>
+</template>

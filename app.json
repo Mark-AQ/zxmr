@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/project/project-page/project",
+    "pages/project/subscribe-page/subscribe",
+    "pages/project/home-page/home",
+    "pages/project/ works-page/works",
+    "pages/project/mine/mine",
+    "pages/project/home-page/company-info/company-info",
+    "pages/project/subscribe-page/personal-info/personal-info"
+    
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f0f2f5"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/project/home-page/home",
+        "text": "首页",
+        "iconPath": "images/tabbar/home.png",
+        "selectedIconPath": "images/tabbar/home-sele.png"
+      },
+      {
+        "pagePath": "pages/project/subscribe-page/subscribe",
+        "text": "预约",
+        "iconPath": "images/tabbar/yuyue.png",
+        "selectedIconPath": "images/tabbar/yuyue-sele.png"
+      },
+      {
+        "pagePath": "pages/project/project-page/project",
+        "text": "项目",
+        "iconPath": "images/tabbar/project.png",
+        "selectedIconPath": "images/tabbar/project-sele.png"
+      },
+      {
+        "pagePath": "pages/project/ works-page/works",
+        "text": "作品",
+        "iconPath": "images/tabbar/zuopinzhanshi.png",
+        "selectedIconPath": "images/tabbar/zuopinzhanshi-sele.png"
+      },
+      {
+        "pagePath": "pages/project/mine/mine",
+        "text": "我的",
+        "iconPath": "images/tabbar/mine.png",
+        "selectedIconPath": "images/tabbar/mine-sele.png"
+      }
+    ]
+  }
+}

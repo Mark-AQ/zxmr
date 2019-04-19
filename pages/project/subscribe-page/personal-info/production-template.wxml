@@ -1,0 +1,17 @@
+<!-- 作品Item -->
+<template name="productionItemTemplate">
+  <view class='productionItemTemplateBg-xss'>
+    <!-- top -->
+    <view class='productionTopbg-xss'>
+      <image class='iconImg-xss' src='{{imgSrc}}'></image>
+      <view class='textPriceBg-xss'>
+        <text class='productionName-xss'>{{title}}</text>
+        <text class='productionPrice-xss'>{{"¥" + price}}</text>
+      </view>
+    </view>
+
+    <image class='productContentImg-xss' src='{{imgSrc}}'> </image>
+    <text class='productTime-xss'>2019/09/19</text>
+    <view class='productLine-xss'></view>   
+  </view>
+</template>

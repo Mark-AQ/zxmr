@@ -1,0 +1,71 @@
+<!--pages/project/subscribe-page/personal-info/personal-info.wxml-->
+
+<import src="/pages/project/home-page/recommend_item/recommend-item-template.wxml" />
+<import src="/pages/project/subscribe-page/personal-info/production-template.wxml" />
+
+<view>
+  <!-- 顶部头像bg -->
+  <view class='topbg-xss' style="background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1556095164&di=1161d125a4849712f6ddf4702448b4a2&imgtype=jpg&er=1&src=http%3A%2F%2Fpic28.nipic.com%2F20130402%2F9826587_132731042356_2.jpg');">
+    <image class='portrait-xss' src='{{model.imageUrls}}'></image>
+    <text class='name-xss'>{{model.name}}</text>
+    <!-- 职位 -->
+    <view class='bg-xss'>
+      <view class='vipbg-xss'>
+        <image class='vip-image-xss' src='/images/icon/vip.png'></image>
+        <text class='jobs-xss'>{{model.jobs}}</text>
+      </view>
+    </view>
+    <!-- 二维码 -->
+    <image catchtap="qrCodeTap" class='right-image-xss' src='/images/icon/2wm.png'></image>
+  </view>
+
+  <!-- 中间菜单 -->
+  <view class='banner-xss'>
+    <view class='zuoping-xss'>
+      <image class='zuoping-image-xss' src='/images/icon/zuoping.png'></image>
+      <text class='zuoping-text-xss'>{{"作品: " + model.works}}</text>
+    </view>
+
+    <view class='yuyue-xss'>
+      <image class='yuyue-image-xss' src='/images/icon/yuyueBig.png'></image>
+      <text class='yuyue-text-xss'>{{"预约: " + model.appointments}}</text>
+    </view>
+  </view>
+
+  <!-- 分隔线 -->
+  <view class='personalInfo-line-xss'></view>
+
+  <!-- 地址 店名 -->
+  <view class='address-storenameBg-xss'>
+    <text class='storenaem-xss'>{{model.storeName}}</text>
+    <text class='address-xss'>{{model.address}}</text>
+    <image catchtap="dialPhoneTap" class='dial-phone-xss' src='/images/icon/phone.png'></image>
+    <view class='line-xss'></view>
+  </view>
+
+  <!-- 今日预约情况 -->
+  <view class='todayBg-xss'>
+    <text class='todayTag-xss'>今日预约情况</text>
+    <text class='address-xss'>已有{{model.todayAppointmentNum}}人预约</text>
+    <!-- 和地址的xss一样 -->
+    <view class='personalInfo-line-xss'></view>
+  </view>
+
+  <!-- 作品标题 -->
+  <view class='productionTitle-xss'>
+    <text class='productionText-xss'>作品</text>
+  </view>
+  <view class='productionTitle-line-xss'></view>
+  <!-- 作品 -->
+  <view class='productionItemList'>
+    <block wx:for="{{wokes.dataList}}" wx:key="key" wx:for-item="data">
+      <template is="productionItemTemplate" data="{{...data}}" />
+    </block>
+  </view>
+
+  <!-- 立即预约 -->
+  <view class='subscribeButtonBg-css'>
+    <button class="subscribeButton" bindtap='subscribeBtnTap'>立即预约</button>
+  </view>
+    
+</view>

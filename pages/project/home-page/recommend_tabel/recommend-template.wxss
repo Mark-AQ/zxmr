@@ -1,0 +1,33 @@
+/* pages/project/home-page/recommend_tabel/recommend.wxss */
+
+
+@import "../recommend_item/recommend-item-template.wxss";
+
+.recommendLabel-container {
+  background-color: white;
+}
+.recommendLabel-topview {
+  margin-top: 22rpx;
+  height: 100rpx;
+  width: 100%;
+  background-color: white;
+}
+
+.topview-title {
+  margin-left: 20rpx;
+  line-height: 100rpx;
+  font-size: 32rpx;
+}
+
+.line-view {
+  background-color: #f3f3f3;
+  height: 2rpx;
+  width: 100%;
+}
+
+.recommendItemList {
+  display: flex;
+  flex-direction: row;
+   flex-wrap: wrap;  /*  超出自动换行 */
+   margin-bottom: 22rpx;
+}

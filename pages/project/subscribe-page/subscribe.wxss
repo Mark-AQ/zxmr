@@ -1,0 +1,75 @@
+/* pages/project/subscribe-page/subscribe.wxss */
+@import "cell-template.wxss";
+page {
+  background-color: white;
+}
+
+.top-bgview-xss {
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 237rpx;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+
+.logo-xss {
+  width:  25%;
+  height: 168rpx;
+  margin: 22rpx 0;
+  display:block;
+}
+
+.collection-xss {
+  margin-top: 22rpx;
+  margin-right: 22rpx;
+  margin-bottom: 22rpx;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-xss {
+  margin-left: 22rpx;
+  font-size: 35rpx;
+  -webkit-line-clamp: 1;
+  overflow: hidden;  
+  -webkit-box-orient: vertical; 
+  text-overflow: ellipsis; 
+  display:-webkit-box;
+  /* background-color: royalblue; */
+}
+
+.phone-xss {
+  /* display:block;   */
+  margin-left: 22rpx;
+  font-size: 28rpx;
+  color: rgb(80, 107, 228);
+}
+
+.address-xss {
+  margin-left: 22rpx;
+  font-size: 28rpx;
+  color: #333;
+  -webkit-line-clamp: 2;
+  overflow: hidden;  
+  -webkit-box-orient: vertical; 
+  text-overflow: ellipsis; 
+  display:-webkit-box;
+}
+
+.line-xss {
+  background-color: #f0f2f5;
+  height: 22rpx;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+
+.cellBg-xss {
+  display: flex;
+  flex-direction: column;
+}

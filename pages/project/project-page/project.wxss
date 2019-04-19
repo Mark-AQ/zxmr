@@ -1,0 +1,116 @@
+/* pages/project/project-page/project.wxss */
+
+.sort-list {
+  justify-content: space-around;
+  display: flex;
+  position: fixed;
+  top: 0;
+  background: white;
+  width: 100%;
+  height: 96rpx;
+  font-size: 32rpx;
+  color: #6a6a6a;
+  align-content: center;
+  border: 2rpx solid #ececec;
+  align-items: center;
+  z-index: 999999;
+}
+
+.sort {
+  text-align: center;
+  height: 100%;
+  line-height: 96rpx;
+  border-right: 1rpx solid #ececec;
+  flex: 1;
+}
+
+.downArrow {
+  width: 48rpx;
+  height: 48rpx;
+  position: absolute;
+  top: 25rpx;
+}
+
+.classify-sort-list {
+  flex-direction: column;
+  border-top: 1px solid rgba(0, 0, 0, 0);
+  display: flex;
+  max-height: 580rpx;
+  width: 100%;
+  position: fixed;
+  top: 96rpx;
+  z-index: 9999;
+}
+
+/* 遮盖 */
+.cover.show-cover {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 96rpx;
+  z-index: 9998;
+}
+
+.classify-sort-list {
+  background-color: white;
+}
+
+
+.classify-sort-list {
+  display: none;
+  animation: slidup 0.3s ease-in both;
+  
+}
+
+.classify-sort-list.classify-act {
+  display: block;
+  animation: slidown 0.3s ease-in both;
+}
+
+.classify-sortbg {
+  font-size: 25rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 1rpx solid #ECECEC;
+  
+}
+
+.classify-sort {
+  font-size: 25rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  margin-left: 30rpx;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.text-xss {
+  z-index: 0;
+  position: fixed;
+  top: 96rpx;
+  color: red;
+  margin-top: 550rpx;
+}
+
+
+/*筛选项隐藏 显示动画 start*/
+@keyframes slidown {
+  from {
+    transform: translateY(-580rpx);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slidup {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-580rpx);
+  }
+}

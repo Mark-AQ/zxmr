@@ -1,0 +1,30 @@
+
+
+.recommend-item {
+  display: flex;
+  flex-direction: column;
+  width: 342rpx;
+  margin-left: 22rpx;
+}
+
+.recommend-image {
+  padding-top: 22rpx;
+  height: 380rpx;
+  width: 342rpx;
+  padding-bottom: 22rpx;
+}
+
+.recommend-title {
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #000;
+}
+
+.recommend-price {
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  color: red;
+}
