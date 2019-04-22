@@ -17,7 +17,6 @@ Page({
     var data = require('../../../../data/beautician-data.js')
     let index = options.id;
     let dic = data.beauticianData[index - 1];
-    // let dic = data.beauticianData[0];
     this.setData({
       model: dic
     })

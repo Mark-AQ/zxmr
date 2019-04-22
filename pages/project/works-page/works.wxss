@@ -1,0 +1,8 @@
+/* pages/project/works-page/works.wxss */
+
+@import "/pages/project/subscribe-page/personal-info/production-template.wxss";
+
+
+.wokeBg-xss {
+  width: 100%;
+}

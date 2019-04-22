@@ -1,0 +1,30 @@
+<!--pages/project/detail-page/project-detail.wxml-->
+
+<import src="../../../wxParse/wxParse.wxml" />
+
+<view>
+  <!-- 轮播图 -->
+  <swiper catchtap="onSwiperTap" vertical="{{false}}" indicator-dots="true" autoplay="true" indicator-active-color="#ec3333" interval="5000">
+    <view wx:for="{{imageUrls}}" wx:key="key" wx:for-item="imgItem">
+      <swiper-item>
+        <image src="{{imgItem}}"></image>
+      </swiper-item>
+    </view>
+  </swiper>
+
+  <view class='title-pricebg-xss'>
+    <text class='title-xss'>{{titleData}}</text>
+    <text class='price-xss'>{{"¥" + priceData}}</text>
+  </view>
+
+  <view class='titleBg-xss'>
+    <text class='detailTitle-xss'>详情</text>
+  </view>
+
+  <view class='line-xss'></view>
+
+  <view class="wxParse">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+  </view>
+
+</view>

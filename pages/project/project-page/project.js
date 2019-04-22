@@ -22,7 +22,24 @@ Page({
     this.setData({
       classifyData: data.classifyData
     })
+
+    var recommend = require('../../../data/recommend-data.js')
+    this.setData({
+      homeData: recommend.homeData
+    })
+
   },
+
+/// 跳转详情
+  onCellTap: function (options) {
+    var price = options.currentTarget.dataset.price;
+    var title = options.currentTarget.dataset.title;
+    console.log(price);
+    wx.navigateTo({
+      url: '/pages/project/detail-page/project-detail?price=' + price + '&title=' + title
+    })
+  },
+
 
   changeBoxBtn: function (options) {
     var data = this.data.classifyData;

@@ -1,14 +1,12 @@
 {
   "pages": [
+    "pages/project/home-page/home",
+    "pages/project/works-page/works",
     "pages/project/project-page/project",
     "pages/project/subscribe-page/subscribe",
-    "pages/project/home-page/home",
-    "pages/project/ works-page/works",
-    "pages/project/mine/mine",
     "pages/project/home-page/company-info/company-info",
-    "pages/project/subscribe-page/personal-info/personal-info"
-    
-    
+    "pages/project/subscribe-page/personal-info/personal-info",
+    "pages/project/detail-page/project-detail"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -40,16 +38,10 @@
         "selectedIconPath": "images/tabbar/project-sele.png"
       },
       {
-        "pagePath": "pages/project/ works-page/works",
+        "pagePath": "pages/project/works-page/works",
         "text": "作品",
         "iconPath": "images/tabbar/zuopinzhanshi.png",
         "selectedIconPath": "images/tabbar/zuopinzhanshi-sele.png"
-      },
-      {
-        "pagePath": "pages/project/mine/mine",
-        "text": "我的",
-        "iconPath": "images/tabbar/mine.png",
-        "selectedIconPath": "images/tabbar/mine-sele.png"
       }
     ]
   }

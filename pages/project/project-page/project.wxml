@@ -1,4 +1,6 @@
 <!--pages/project/project-page/project.wxml-->
+<import src="/pages/project/home-page/recommend_tabel/recommend-template" />
+
 
 <!-- 头部筛选菜单 -->
 <view class="sort-list">
@@ -42,4 +44,9 @@
 </view>
 
 
-<text class='text-xss'>翻身,借古讽今大使馆附近的水果减肥过段时间高房价的水果减肥告诉大家风格就是看到官方就告诉大家分公司接电话</text>
+<!-- 推荐cell <template is="recommendLabelTemplate" data="{{...in_theaters}}" /> -->
+  <view>
+    <block wx:for="{{homeData}}" wx:key="key" wx:for-item="data">
+      <template is="recommendLabelTemplate" data="{{...data}}" />
+    </block>
+  </view>

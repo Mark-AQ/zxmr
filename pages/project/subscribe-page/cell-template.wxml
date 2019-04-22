@@ -1,3 +1,7 @@
+
+
+
+
 <template name="cellItem">
   <view class='bg-xss'   bindtap='cellItemTap'  data-pageId="{{pageId}}">
     <image class='icon-xss' src='{{imageUrls}}'></image>

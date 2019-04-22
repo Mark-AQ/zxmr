@@ -1,17 +1,10 @@
 
-/* 页面背景 */
-.productionItemTemplateBg-xss {
-  /* margin-bottom: 22rpx;
-  display: flex;
-  flex-direction: column;
-  width: 100%; */
-}
 
 .productionTopbg-xss {
   margin: 0 22rpx 22rpx 22rpx;
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width:706rpx;
 }
 
 .iconImg-xss {

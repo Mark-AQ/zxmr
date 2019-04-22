@@ -1,5 +1,7 @@
 /* pages/project/project-page/project.wxss */
 
+@import "/pages/project/home-page/recommend_tabel/recommend-template.wxss";
+
 .sort-list {
   justify-content: space-around;
   display: flex;

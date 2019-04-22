@@ -1,0 +1,8 @@
+<!--pages/project/works-page/works.wxml-->
+<import src="../subscribe-page/personal-info/production-template.wxml" />
+
+<view class="wokeBg-xss">
+  <block wx:for="{{wokes.dataList}}" wx:key="key" wx:for-item="data">
+    <template is="productionItemTemplate" data="{{...data}}" />
+  </block>
+</view>

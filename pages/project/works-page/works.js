@@ -1,4 +1,7 @@
 // pages/project/ works-page/works.js
+
+
+
 Page({
 
   /**
@@ -12,7 +15,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var data = require('../../../data/recommend-data.js')
+    this.setData({
+      wokes: data.homeData[0]
+    })
   },
 
   /**

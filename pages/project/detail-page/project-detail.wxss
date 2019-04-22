@@ -1,0 +1,58 @@
+/* pages/project/detail-page/project-detail.wxss */
+
+
+/**app.wxss**/
+@import "../../../wxParse/wxParse.wxss";
+
+page {
+  background-color: #f0f2f5;
+}
+
+swiper {
+  width: 100%;
+  height: 500rpx;
+}
+
+swiper image {
+  width: 100%;
+  height: 500rpx;
+}
+
+.title-pricebg-xss {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.title-xss {
+  margin: 22rpx;
+  font-size: 32rpx;
+}
+
+.price-xss {
+  margin: 0 22rpx 22rpx 22rpx;
+  font-size: 32rpx;
+  color: red;
+}
+
+.titleBg-xss {
+  height:  96rpx;
+  width: 100%;
+  background-color: white;
+}
+
+.detailTitle-xss {
+  margin-left: 22rpx;
+  line-height: 96rpx;
+}
+
+.wxParse {
+  background-color: white;
+}
+
+.line-xss {
+  background-color: #f0f2f5;
+  height: 2rpx;
+  margin-bottom: 22rpx;
+  width: 100%;
+}

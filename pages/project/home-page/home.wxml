@@ -14,13 +14,15 @@
   <!-- 推荐cell <template is="recommendLabelTemplate" data="{{...in_theaters}}" /> -->
   <view>
     <block wx:for="{{homeData}}" wx:key="key" wx:for-item="data">
-      <template is="recommendLabelTemplate" data="{{...data}}" />
+      <view>
+        <template is="recommendLabelTemplate" data="{{...data}}" />
+      </view>
     </block>
   </view>
 
 
-<button class="kf_button" bindtap='companyInfoTap'>
+  <button class="kf_button" bindtap='companyInfoTap'>
     <image class="kf_image" src="/images/icon/jianjie.png"></image>
-</button>
+  </button>
 
 </view>

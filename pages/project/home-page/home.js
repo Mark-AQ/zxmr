@@ -14,6 +14,15 @@ Page({
     ]
   },
 
+  onCellTap: function (options) {
+    var price = options.currentTarget.dataset.price;
+    var title = options.currentTarget.dataset.title;
+    console.log(price);
+    wx.navigateTo({
+      url: '/pages/project/detail-page/project-detail?price=' + price + '&title=' + title
+     })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
