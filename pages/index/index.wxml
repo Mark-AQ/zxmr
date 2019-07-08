@@ -10,4 +10,9 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
+
+  <!-- <view>
+    <text>12345</text>
+  </view> -->
 </view>
+

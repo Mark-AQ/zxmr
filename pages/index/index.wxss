@@ -19,3 +19,8 @@
 .usermotto {
   margin-top: 200px;
 }
+
+/* view, text {
+  background-color: blueviolet;
+  font-size: 80rpx;
+} */
